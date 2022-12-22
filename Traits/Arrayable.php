@@ -4,10 +4,23 @@ namespace Shadar\Leetcode\Traits;
 
 trait Arrayable
 {
-    private function printArray(array $array): void
+    /**
+     * @param array $array
+     * @return void
+     */
+    private function printArray(array $array, bool $humanableKey = true): void
     {
         foreach ($array as $key => $value) {
-            echo $key + 1 . '. ' . $value . PHP_EOL;
+            echo ($humanableKey ? $key + 1 : $key) . '. ' . $value . PHP_EOL;
         }
+    }
+
+    /**
+     * @param array $array
+     * @return bool
+     */
+    private function isArrayOfIntegers(array $array): bool
+    {
+        return count($array) === count(array_filter($array, 'is_int'));
     }
 }

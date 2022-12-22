@@ -3,6 +3,7 @@
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayOne\Exercise1480;
 
 use Exception;
+use Shadar\Leetcode\Traits\Arrayable;
 
 /**
  * Running Sum of 1d Array.
@@ -12,6 +13,8 @@ use Exception;
  */
 class Solution
 {
+    use Arrayable;
+
     /**
      * @param int[] $nums
      * @return int[]
@@ -35,14 +38,5 @@ class Solution
         }
 
         return $result;
-    }
-
-    /**
-     * @param array $array
-     * @return bool
-     */
-    private function isArrayOfIntegers(array $array): bool
-    {
-        return count($array) === count(array_filter($array, 'is_int'));
     }
 }

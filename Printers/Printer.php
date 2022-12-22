@@ -14,7 +14,8 @@ class Printer
         'Leetcode75' => [
             'Level 1' => [
                 'Day 1' => [
-                    '1480' => DayOne\Exercise1480\Example::class
+                    '1480. Running Sum of 1d Array ' => DayOne\Exercise1480\Example::class,
+                    '724. Find Pivot Index' => DayOne\Exercise724\Example::class
                 ]
             ]
         ]
