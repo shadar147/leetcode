@@ -1,0 +1,16 @@
+{
+  "name": "shadar147/leetcode",
+  "authors": [
+    {
+      "name": "Vadim Lebedev",
+      "email": "shadar147@gmail.com"
+    }
+  ],
+  "require": {},
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Shadar\\Leetcode\\": "./"
+    }
+  }
+}
