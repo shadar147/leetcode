@@ -3,7 +3,7 @@
 namespace Shadar\Leetcode\Printers;
 
 use Shadar\Leetcode\Contracts\Example;
-use Shadar\Leetcode\Leetcode75\LevelOne\DayOne;
+use Shadar\Leetcode\{DataStructure, Leetcode75};
 use Shadar\Leetcode\Traits\Arrayable;
 
 class Printer
@@ -11,11 +11,18 @@ class Printer
     use Arrayable;
 
     private array $exercises = [
+        'Data Structure' => [
+            'Level 1' => [
+                'Day 1' => [
+                    '217. Contains Duplicate' => DataStructure\LevelOne\DayOne\Exercise217\Example::class
+                ]
+            ]
+        ],
         'Leetcode75' => [
             'Level 1' => [
                 'Day 1' => [
-                    '1480. Running Sum of 1d Array ' => DayOne\Exercise1480\Example::class,
-                    '724. Find Pivot Index' => DayOne\Exercise724\Example::class
+                    '1480. Running Sum of 1d Array ' => Leetcode75\LevelOne\DayOne\Exercise1480\Example::class,
+                    '724. Find Pivot Index' => Leetcode75\LevelOne\DayOne\Exercise724\Example::class
                 ]
             ]
         ]

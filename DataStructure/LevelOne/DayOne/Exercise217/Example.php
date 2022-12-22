@@ -1,6 +1,6 @@
 <?php
 
-namespace Shadar\Leetcode\Leetcode75\LevelOne\DayOne\Exercise724;
+namespace Shadar\Leetcode\DataStructure\LevelOne\DayOne\Exercise217;
 
 use Exception;
 use Shadar\Leetcode\Contracts\Example as ExampleContract;
@@ -12,11 +12,9 @@ class Example implements ExampleContract
     use Arrayable;
 
     private array $testCases = [
-        [1, 7, 3, 6, 5, 6],
-        [1, 2, 3],
-        [2, 1, -1],
-        [-1, -1, -1, -1, -1, 0],
-        [-1, -1, 0, 1, 0, -1]
+        [1, 2, 3, 1],
+        [1, 2, 3, 4],
+        [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
     ];
     private Solution $solution;
     private Time $time;
@@ -31,10 +29,10 @@ class Example implements ExampleContract
     {
         foreach ($this->testCases as $key => $testCase) {
             echo $key + 1 . ' test case for array:' . PHP_EOL;
-            $this->printArray($testCase, false);
+            $this->printArray($testCase);
             $this->time->startTime();
             try {
-                echo 'Result: ' . $this->solution->pivotIndex($testCase) . PHP_EOL;
+                echo 'Result: ' . var_export($this->solution->containsDuplicate($testCase), true) . PHP_EOL;
             } catch (Exception $e) {
                 echo "Error '{$e->getMessage()}' for array " . implode(', ', $testCase) . PHP_EOL;
             }
