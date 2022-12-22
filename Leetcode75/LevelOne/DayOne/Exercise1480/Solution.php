@@ -3,6 +3,7 @@
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayOne\Exercise1480;
 
 use Exception;
+use Shadar\Leetcode\Contracts\Solution as SolutionContract;
 use Shadar\Leetcode\Traits\Arrayable;
 
 /**
@@ -11,7 +12,7 @@ use Shadar\Leetcode\Traits\Arrayable;
  * Return the running sum of nums.
  * Result for 3 cases by leetcode: 7ms for clear code w/o checks, 8ms for code with array checks, 11ms with isArrayOfIntegers method.
  */
-class Solution
+class Solution implements SolutionContract
 {
     use Arrayable;
 

@@ -3,6 +3,7 @@
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayOne\Exercise724;
 
 use Exception;
+use Shadar\Leetcode\Contracts\Solution as SolutionContract;
 use Shadar\Leetcode\Traits\Arrayable;
 
 /**
@@ -12,7 +13,7 @@ use Shadar\Leetcode\Traits\Arrayable;
  * Return the leftmost pivot index. If no such index exists, return -1.
  * Result for 3 cases by leetcode: 12ms for clear code w/o checks, 10ms for code with array checks, 7ms with isArrayOfIntegers method.
  */
-class Solution
+class Solution implements SolutionContract
 {
     use Arrayable;
 

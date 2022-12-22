@@ -8,7 +8,7 @@ trait Arrayable
      * @param array $array
      * @return void
      */
-    private function printArray(array $array, bool $humanableKey = true): void
+    protected function printArray(array $array, bool $humanableKey = true): void
     {
         foreach ($array as $key => $value) {
             echo ($humanableKey ? $key + 1 : $key) . '. ' . $value . PHP_EOL;

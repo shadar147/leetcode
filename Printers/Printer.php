@@ -14,6 +14,7 @@ class Printer
         'Data Structure' => [
             'Level 1' => [
                 'Day 1' => [
+                    '53. Maximum Subarray' => DataStructure\LevelOne\DayOne\Exercise53\Example::class,
                     '217. Contains Duplicate' => DataStructure\LevelOne\DayOne\Exercise217\Example::class
                 ]
             ]

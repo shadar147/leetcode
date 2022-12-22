@@ -1,15 +1,15 @@
 <?php
 
-namespace Shadar\Leetcode\DataStructure\LevelOne\DayOne\Exercise217;
+namespace Shadar\Leetcode\DataStructure\LevelOne\DayOne\Exercise53;
 
 use Shadar\Leetcode\Abstract\Example as AbstractExample;
 
 class Example extends AbstractExample
 {
     protected array $testCases = [
-        [1, 2, 3, 1],
-        [1, 2, 3, 4],
-        [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
+        [-2, 1, -3, 4, -1, 2, 1, -5, 4],
+        [1],
+        [5, 4, -1, 7, 8]
     ];
 
     public function __construct()
@@ -21,6 +21,6 @@ class Example extends AbstractExample
 
     public function handle(): void
     {
-        $this->defaultHandler('containsDuplicate');
+        $this->defaultHandler('maxSubArray');
     }
 }

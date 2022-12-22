@@ -3,12 +3,13 @@
 namespace Shadar\Leetcode\DataStructure\LevelOne\DayOne\Exercise217;
 
 use Exception;
+use Shadar\Leetcode\Contracts\Solution as SolutionContract;
 use Shadar\Leetcode\Traits\Arrayable;
 
 /**
  * Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
  */
-class Solution
+class Solution implements SolutionContract
 {
     use Arrayable;
 
