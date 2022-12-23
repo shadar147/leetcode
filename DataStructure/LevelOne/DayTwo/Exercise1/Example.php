@@ -1,6 +1,6 @@
 <?php
 
-namespace Shadar\Leetcode\Exercises\Exercise1;
+namespace Shadar\Leetcode\DataStructure\LevelOne\DayTwo\Exercise1;
 
 use Shadar\Leetcode\Abstract\Example as AbstractExample;
 

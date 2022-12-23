@@ -13,6 +13,9 @@ class DataStructureStructure extends AbstractStructure
             'Day 1' => [
                 '53. Maximum Subarray' => DataStructure\LevelOne\DayOne\Exercise53\Example::class,
                 '217. Contains Duplicate' => DataStructure\LevelOne\DayOne\Exercise217\Example::class
+            ],
+            'Day 2' => [
+                '1. Two Sum' => DataStructure\LevelOne\DayTwo\Exercise1\Example::class,
             ]
         ]
     ];

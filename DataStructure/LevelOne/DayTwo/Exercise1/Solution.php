@@ -1,6 +1,6 @@
 <?php
 
-namespace Shadar\Leetcode\Exercises\Exercise1;
+namespace Shadar\Leetcode\DataStructure\LevelOne\DayTwo\Exercise1;
 
 use Exception;
 use Shadar\Leetcode\Contracts\Solution as SolutionContract;
