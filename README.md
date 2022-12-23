@@ -15,6 +15,7 @@ After that use 'php index.php' and choose an exercise.
 | #    | Title | Solution                                                                                                      | Difficulty |
 |------| ----- |---------------------------------------------------------------------------------------------------------------|------------|
 | 205  |[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayTwo/Exercise205/Solution.php)  |Easy|
+| 392  |[Is Subsequence](https://leetcode.com/problems/is-subsequence)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayTwo/Exercise392/Solution.php)  |Easy|
 | 724  |[Find Pivot Index](https://leetcode.com/problems/find-pivot-index)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayOne/Exercise724/Solution.php)  |Easy|
 | 1480 |[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayOne/Exercise1480/Solution.php) |Easy|
 

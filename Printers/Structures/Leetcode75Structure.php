@@ -16,6 +16,7 @@ class Leetcode75Structure extends AbstractStructure
             ],
             'Day 2' => [
                 '205. Isomorphic Strings' => Leetcode75\LevelOne\DayTwo\Exercise205\Example::class,
+                '392. Is Subsequence' => Leetcode75\LevelOne\DayTwo\Exercise392\Example::class
             ]
         ]
     ];
