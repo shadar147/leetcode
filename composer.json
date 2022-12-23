@@ -6,7 +6,9 @@
       "email": "shadar147@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "ext-readline": "*"
+  },
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {

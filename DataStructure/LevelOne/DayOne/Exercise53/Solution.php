@@ -25,7 +25,7 @@ class Solution implements SolutionContract
         }
 
         if (empty($nums)) {
-            return false;
+            return 0;
         }
 
         $maxSum = $nums[0];

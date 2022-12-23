@@ -3,101 +3,57 @@
 namespace Shadar\Leetcode\Printers;
 
 use Shadar\Leetcode\Contracts\Example;
-use Shadar\Leetcode\{DataStructure, Leetcode75};
+use Shadar\Leetcode\Abstract\AbstractStructure;
+use Shadar\Leetcode\Printers\Structures;
 use Shadar\Leetcode\Traits\Arrayable;
 
 class Printer
 {
     use Arrayable;
 
-    private array $exercises = [
-        'Data Structure' => [
-            'Level 1' => [
-                'Day 1' => [
-                    '53. Maximum Subarray' => DataStructure\LevelOne\DayOne\Exercise53\Example::class,
-                    '217. Contains Duplicate' => DataStructure\LevelOne\DayOne\Exercise217\Example::class
-                ]
-            ]
-        ],
-        'Leetcode75' => [
-            'Level 1' => [
-                'Day 1' => [
-                    '1480. Running Sum of 1d Array ' => Leetcode75\LevelOne\DayOne\Exercise1480\Example::class,
-                    '724. Find Pivot Index' => Leetcode75\LevelOne\DayOne\Exercise724\Example::class
-                ]
-            ]
-        ]
+    private array $structures = [
+        'Data Structure' => Structures\DataStructureStructure::class,
+        'Exercises' => Structures\ExercisesStructure::class,
+        'Leetcode75' => Structures\Leetcode75Structure::class
     ];
 
-    private array $steps = [
-        'chooseCourse',
-        'chooseLevel',
-        'chooseDay',
-        'chooseExercise',
-    ];
-
-    private string $course;
+    private AbstractStructure $structure;
     private string $level;
     private string $day;
     private string $exercise;
 
     public function start(): ?Example
     {
-        foreach ($this->steps as $step) {
-            $this->{$step}();
+        $this->chooseStructure();
+
+        if (!in_array('chooseExample', $this->structure->getSteps())) {
+            return null;
         }
-        $exerciseClass = $this->getExercise();
 
-        return is_null($exerciseClass) ? null : new $exerciseClass;
+        foreach ($this->structure->getSteps() as $step) {
+            if (!method_exists($this->structure::class, $step)) {
+                return null;
+            }
+
+            $this->structure->{$step}();
+        }
+
+        return $this->getExample();
     }
 
-    private function chooseCourse(): void
+    private function chooseStructure(): void
     {
-        $this->course = $this->chooseEntity($this->exercises, 'a course');
+        $structuresKeys = array_keys($this->structures);
+        echo "Choose a structure by enter a number." . PHP_EOL;
+        $this->printArray($structuresKeys);
+        $structureKey = readline('Your choice: ');
+        $structureClass = $structuresKeys[$structureKey - 1];
+
+        $this->structure = new $this->structures[$structureClass];
     }
 
-    private function chooseLevel(): void
+    private function getExample(): ?Example
     {
-        $this->level = $this->chooseEntity($this->getLevels(), 'a level');
-    }
-
-    private function chooseDay(): void
-    {
-        $this->day = $this->chooseEntity($this->getDays(), 'a day');
-    }
-
-    private function chooseExercise(): void
-    {
-        $this->exercise = $this->chooseEntity($this->getExercises(), 'an exercise');
-    }
-
-    private function chooseEntity(array $entities, string $entity): string|int
-    {
-        $keys = array_keys($entities);
-        echo "Choose {$entity} by enter a number." . PHP_EOL;
-        $this->printArray($keys);
-        $index = readline('Your choice: ');
-
-        return $keys[$index - 1];
-    }
-
-    private function getLevels(): array
-    {
-        return empty($this->course) ? [] : $this->exercises[$this->course];
-    }
-
-    private function getDays(): array
-    {
-        return empty($this->level) ? [] : $this->getLevels()[$this->level];
-    }
-
-    private function getExercises(): array
-    {
-        return empty($this->day) ? [] : $this->getDays()[$this->day];
-    }
-
-    private function getExercise(): ?string
-    {
-        return empty($this->exercise) ? null : $this->getExercises()[$this->exercise];
+        return $this->structure->getExample();
     }
 }
