@@ -19,7 +19,8 @@ class Leetcode75Structure extends AbstractStructure
                 '392. Is Subsequence' => Leetcode75\LevelOne\DayTwo\Exercise392\Example::class
             ],
             'Day 3' => [
-                '21. Merge Two Sorted Lists' => Leetcode75\LevelOne\DayThree\Exercise21\Example::class
+                '21. Merge Two Sorted Lists' => Leetcode75\LevelOne\DayThree\Exercise21\Example::class,
+                '206. Reverse Linked List' => Leetcode75\LevelOne\DayThree\Exercise206\Example::class
             ]
         ]
     ];
