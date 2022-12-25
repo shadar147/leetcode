@@ -16,6 +16,7 @@ class ExercisesStructure extends AbstractStructure
         '205. Isomorphic Strings' => Leetcode75\LevelOne\DayTwo\Exercise205\Example::class,
         '206. Reverse Linked List' => Leetcode75\LevelOne\DayThree\Exercise206\Example::class,
         '217. Contains Duplicate' => DataStructure\LevelOne\DayOne\Exercise217\Example::class,
+        '350. Intersection of Two Arrays II' => DataStructure\LevelOne\DayThree\Exercise350\Example::class,
         '392. Is Subsequence' => Leetcode75\LevelOne\DayTwo\Exercise392\Example::class,
         '724. Find Pivot Index' => Leetcode75\LevelOne\DayOne\Exercise724\Example::class,
         '1480. Running Sum of 1d Array ' => Leetcode75\LevelOne\DayOne\Exercise1480\Example::class,

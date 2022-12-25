@@ -17,6 +17,9 @@ class DataStructureStructure extends AbstractStructure
             'Day 2' => [
                 '1. Two Sum' => DataStructure\LevelOne\DayTwo\Exercise1\Example::class,
                 '88. Merge Sorted Array' => DataStructure\LevelOne\DayTwo\Exercise88\Example::class,
+            ],
+            'Day 3' => [
+                '350. Intersection of Two Arrays II' => DataStructure\LevelOne\DayThree\Exercise350\Example::class
             ]
         ]
     ];
