@@ -10,6 +10,7 @@ class ExercisesStructure extends AbstractStructure
 {
     protected array $content = [
         '1. Two Sum' => DataStructure\LevelOne\DayTwo\Exercise1\Example::class,
+        '21. Merge Two Sorted Lists' => Leetcode75\LevelOne\DayThree\Exercise21\Example::class,
         '53. Maximum Subarray' => DataStructure\LevelOne\DayOne\Exercise53\Example::class,
         '88. Merge Sorted Array' => DataStructure\LevelOne\DayTwo\Exercise88\Example::class,
         '205. Isomorphic Strings' => Leetcode75\LevelOne\DayTwo\Exercise205\Example::class,

@@ -18,17 +18,10 @@ class Printer
     ];
 
     private AbstractStructure $structure;
-    private string $level;
-    private string $day;
-    private string $exercise;
 
     public function start(): ?Example
     {
         $this->chooseStructure();
-
-        if (!in_array('chooseExample', $this->structure->getSteps())) {
-            return null;
-        }
 
         foreach ($this->structure->getSteps() as $step) {
             if (!method_exists($this->structure::class, $step)) {
