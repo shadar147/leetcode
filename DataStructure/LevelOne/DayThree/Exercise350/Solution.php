@@ -11,7 +11,7 @@ class Solution implements SolutionContract
      * @param int[] $nums2
      * @return int[]
      */
-    public function sortedIntersect(array $nums1, array $nums2): array
+    public function intersect(array $nums1, array $nums2): array
     {
         sort($nums1);
         sort($nums2);
