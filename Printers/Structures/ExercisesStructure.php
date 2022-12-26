@@ -13,6 +13,7 @@ class ExercisesStructure extends AbstractStructure
         '21. Merge Two Sorted Lists' => Leetcode75\LevelOne\DayThree\Exercise21\Example::class,
         '53. Maximum Subarray' => DataStructure\LevelOne\DayOne\Exercise53\Example::class,
         '88. Merge Sorted Array' => DataStructure\LevelOne\DayTwo\Exercise88\Example::class,
+        '142. Linked List Cycle II' => Leetcode75\LevelOne\DayFour\Exercise142\Example::class,
         '205. Isomorphic Strings' => Leetcode75\LevelOne\DayTwo\Exercise205\Example::class,
         '206. Reverse Linked List' => Leetcode75\LevelOne\DayThree\Exercise206\Example::class,
         '217. Contains Duplicate' => DataStructure\LevelOne\DayOne\Exercise217\Example::class,
