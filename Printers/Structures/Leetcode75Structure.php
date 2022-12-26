@@ -21,6 +21,9 @@ class Leetcode75Structure extends AbstractStructure
             'Day 3' => [
                 '21. Merge Two Sorted Lists' => Leetcode75\LevelOne\DayThree\Exercise21\Example::class,
                 '206. Reverse Linked List' => Leetcode75\LevelOne\DayThree\Exercise206\Example::class
+            ],
+            'Day 4' => [
+                '876. Middle of the Linked List' => Leetcode75\LevelOne\DayFour\Exercise876\Example::class,
             ]
         ]
     ];
