@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\Contracts;
 
-interface Solution
+interface SolutionContract
 {
 
 }

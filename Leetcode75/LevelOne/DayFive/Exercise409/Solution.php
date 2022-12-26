@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayFive\Exercise409;
 
-use Shadar\Leetcode\Contracts\Solution as SolutionContract;
+use Shadar\Leetcode\Contracts\SolutionContract;
 
 /**
  * Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.

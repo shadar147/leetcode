@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayFour\Exercise142;
 
-use Shadar\Leetcode\Contracts\Solution as SolutionContract;
+use Shadar\Leetcode\Contracts\SolutionContract;
 
 /**
  * Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.

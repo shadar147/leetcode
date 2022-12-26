@@ -3,7 +3,7 @@
 namespace Shadar\Leetcode\Abstract;
 
 use Exception;
-use Shadar\Leetcode\Contracts\{ExampleContract, Solution};
+use Shadar\Leetcode\Contracts\{ExampleContract, SolutionContract};
 use Shadar\Leetcode\TimeMarkers\Time;
 use Shadar\Leetcode\Traits\Arrayable;
 
@@ -12,7 +12,7 @@ abstract class AbstractExample implements ExampleContract
     use Arrayable;
 
     protected array $testCases;
-    protected Solution $solution;
+    protected SolutionContract $solution;
     protected Time $time;
     protected bool $humanableKey = true;
 

@@ -3,7 +3,7 @@
 namespace Shadar\Leetcode\DataStructure\LevelOne\DayOne\Exercise53;
 
 use Exception;
-use Shadar\Leetcode\Contracts\Solution as SolutionContract;
+use Shadar\Leetcode\Contracts\SolutionContract;
 use Shadar\Leetcode\Traits\Arrayable;
 
 /**
