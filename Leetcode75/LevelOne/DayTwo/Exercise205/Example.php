@@ -3,7 +3,7 @@
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayTwo\Exercise205;
 
 use Exception;
-use Shadar\Leetcode\Abstract\Example as AbstractExample;
+use Shadar\Leetcode\Abstract\AbstractExample;
 
 class Example extends AbstractExample
 {

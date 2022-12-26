@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\Contracts;
 
-interface Example
+interface ExampleContract
 {
     public function handle(): void;
 }

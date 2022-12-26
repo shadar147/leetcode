@@ -3,11 +3,11 @@
 namespace Shadar\Leetcode\Abstract;
 
 use Exception;
-use Shadar\Leetcode\Contracts\{Example as ExampleContract, Solution};
+use Shadar\Leetcode\Contracts\{ExampleContract, Solution};
 use Shadar\Leetcode\TimeMarkers\Time;
 use Shadar\Leetcode\Traits\Arrayable;
 
-abstract class Example implements ExampleContract
+abstract class AbstractExample implements ExampleContract
 {
     use Arrayable;
 

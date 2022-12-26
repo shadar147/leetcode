@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\DataStructure\LevelOne\DayTwo\Exercise88;
 
-use Shadar\Leetcode\Abstract\Example as AbstractExample;
+use Shadar\Leetcode\Abstract\AbstractExample;
 
 class Example extends AbstractExample
 {
