@@ -2,6 +2,7 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayFive\Exercise409;
 
+use Exception;
 use Shadar\Leetcode\Abstract\AbstractExample;
 
 class Example extends AbstractExample
@@ -21,24 +22,21 @@ class Example extends AbstractExample
 
     public function handle(): void
     {
-        foreach ($this->testCases as $key => $testCase) {
-            $this->printTestCase($key, $testCase);
-            $this->time->startTime();
-            $this->printResult($this->solution->longestPalindrome($testCase));
-            $this->time->stopTime();
-            echo PHP_EOL;
-        }
-
-        $this->printTimeHandler();
+        $this->defaultHandler('longestPalindrome');
     }
 
-    private function printTestCase(int $key, string $testCase): void
+    protected function printResult(int|bool|array $result): void
     {
-        echo $key + 1 . ' test case for string: ' . $testCase .  PHP_EOL;
+        $this->printStringResult($result);
     }
 
-    private function printResult(int $result): void
+    protected function printTestCaseInfo(int $key, string|int|array $testCase): void
     {
-        echo "Result: {$result}" . PHP_EOL;
+        $this->printStringHandler($key, $testCase);
+    }
+
+    protected function printError(Exception $exception, int $key, string|int|array $testCase): void
+    {
+        $this->printStringError($exception, $testCase);
     }
 }

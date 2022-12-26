@@ -3,6 +3,7 @@
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayThree\Exercise206;
 
 use Shadar\Leetcode\Contracts\SolutionContract;
+use Shadar\Leetcode\Entities\ListNode;
 
 /**
  * Given the head of a singly linked list, reverse the list, and return the reversed list.

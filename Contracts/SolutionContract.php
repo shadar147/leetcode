@@ -4,5 +4,5 @@ namespace Shadar\Leetcode\Contracts;
 
 interface SolutionContract
 {
-
+    //
 }

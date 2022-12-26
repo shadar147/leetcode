@@ -31,25 +31,26 @@ class Example extends AbstractExample
 
     public function handle(): void
     {
-        foreach ($this->testCases as $key => $testCase) {
-            $this->printTestCaseInfo($key, $testCase);
-            $this->time->startTime();
-            try {
-                echo 'Result: ' . var_export($this->solution->isSubsequence($testCase['s'], $testCase['t']), true) . PHP_EOL;
-            } catch (Exception $e) {
-                echo "Error '{$e->getMessage()}' for array " . implode(', ', $testCase) . PHP_EOL;
-            }
-            $this->time->stopTime();
-            echo PHP_EOL;
-        }
-
-        $this->printTimeHandler();
+        $this->defaultHandler('isSubsequence');
     }
 
-    private function printTestCaseInfo(int $key, array $testCase): void
+    protected function resultHandler(string $solutionMethod, mixed $testCase): bool
     {
-        echo $key + 1 . ' test case for strings:' . PHP_EOL
-            . 'first: ' . $testCase['s'] . PHP_EOL
-            . 'second: ' . $testCase['t'] . PHP_EOL;
+        return $this->solution->{$solutionMethod}($testCase['s'], $testCase['t']);
+    }
+
+    protected function printTestCaseInfo(int $key, array|string|int $testCase): void
+    {
+        $this->printStringsHandler($key, $testCase['s'], $testCase['t']);
+    }
+
+    protected function printResult(array|bool|int $result): void
+    {
+        $this->printVarExportResult($result);
+    }
+
+    protected function printError(Exception $exception, int $key, array|int|string $testCase): void
+    {
+        $this->printStringsError($exception, $testCase['s'], $testCase['t']);
     }
 }

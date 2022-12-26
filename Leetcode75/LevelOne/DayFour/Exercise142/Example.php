@@ -2,9 +2,11 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayFour\Exercise142;
 
-use Shadar\Leetcode\Abstract\AbstractExample;
+use Exception;
+use Shadar\Leetcode\Abstract\ListNodeAbstractExample;
+use Shadar\Leetcode\Entities\ListNode;
 
-class Example extends AbstractExample
+class Example extends ListNodeAbstractExample
 {
     protected array $testCases = [
         [
@@ -47,35 +49,23 @@ class Example extends AbstractExample
         $this->printTimeHandler();
     }
 
-    private function printTestCaseInfo(int $key, array $testCase): void
+    protected function printTestCaseInfo(int $key, array|string|int $testCase): void
     {
-        echo $key + 1 . ' test case for array:' . PHP_EOL;
-        $this->printArray($testCase['head'], $this->humanableKey);
+        $this->printArrayHandler($key, $testCase['head']);
         echo 'pos: ' . $testCase['pos'] . PHP_EOL;
     }
 
-    private function createListNodes(array $list, int $pos): ?ListNode
+    protected function printResult(ListNode|int|bool|array|null $result, array $testCase = []): void
     {
-        $listNodes = [];
-
-        for ($i = count($list) - 1; $i >= 0; $i--) {
-            $listNodes[] = new ListNode($list[$i], end($listNodes) ?: null);
-
-            if ($i === $pos) {
-                $listNodes[0] = new ListNode($listNodes[0]->val, end($listNodes) ?: null);
-                $listNodes[count($listNodes) - 1]->next = $listNodes[0];
-            }
-        }
-
-        return end($listNodes) ?: null;
-    }
-
-    private function printResult(?ListNode $listNode, array $testCase): void
-    {
-        if (is_null($listNode)) {
+        if (is_null($result)) {
             echo 'no cycle' . PHP_EOL;
         } else {
-            echo 'tail connects to node index ' . array_search($listNode->val, $testCase) . PHP_EOL;
+            echo 'tail connects to node index ' . array_search($result->val, $testCase) . PHP_EOL;
         }
+    }
+
+    protected function printError(Exception $exception, int $key, array|int|string $testCase): void
+    {
+        $this->printTestCaseError($exception, $key);
     }
 }

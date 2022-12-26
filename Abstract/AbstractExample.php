@@ -4,17 +4,20 @@ namespace Shadar\Leetcode\Abstract;
 
 use Exception;
 use Shadar\Leetcode\Contracts\{ExampleContract, SolutionContract};
+use Shadar\Leetcode\Entities\ListNode;
 use Shadar\Leetcode\TimeMarkers\Time;
-use Shadar\Leetcode\Traits\Arrayable;
+use Shadar\Leetcode\Traits\{Arrayable, Echoable};
 
 abstract class AbstractExample implements ExampleContract
 {
-    use Arrayable;
+    use Arrayable,
+        Echoable\Errors,
+        Echoable\Results,
+        Echoable\TestCases;
 
     protected array $testCases;
     protected SolutionContract $solution;
     protected Time $time;
-    protected bool $humanableKey = true;
 
     public function __construct()
     {
@@ -23,15 +26,21 @@ abstract class AbstractExample implements ExampleContract
 
     abstract public function handle(): void;
 
+    abstract protected function printTestCaseInfo(int $key, array|string|int $testCase): void;
+
+    abstract protected function printResult(array|int|bool $result): void;
+
+    abstract protected function printError(Exception $exception, int $key, string|int|array $testCase): void;
+
     protected function defaultHandler(string $solutionMethod): void
     {
         foreach ($this->testCases as $key => $testCase) {
-            $this->printArrayHandler($key, $testCase);
+            $this->printTestCaseInfo($key, $testCase);
             $this->time->startTime();
             try {
-                echo 'Result: ' . var_export($this->solution->{$solutionMethod}($testCase), true) . PHP_EOL;
+                $this->printResult($this->resultHandler($solutionMethod, $testCase));
             } catch (Exception $e) {
-                echo "Error '{$e->getMessage()}' for array " . implode(', ', $testCase) . PHP_EOL;
+                $this->printError($e, $key, $testCase);
             }
             $this->time->stopTime();
             echo PHP_EOL;
@@ -40,10 +49,9 @@ abstract class AbstractExample implements ExampleContract
         $this->printTimeHandler();
     }
 
-    protected function printArrayHandler(int $key, array $value): void
+    protected function resultHandler(string $solutionMethod, mixed $testCase): array|int|bool|ListNode|null
     {
-        echo $key + 1 . ' test case for array:' . PHP_EOL;
-        $this->printArray($value, $this->humanableKey);
+        return $this->solution->{$solutionMethod}($testCase);
     }
 
     protected function printTimeHandler(): void
