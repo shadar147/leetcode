@@ -24,6 +24,7 @@ After that use 'php index.php' and choose an exercise.
 | 206  |[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayThree/Exercise206/Solution.php) | Easy       |
 | 392  |[Is Subsequence](https://leetcode.com/problems/is-subsequence)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayTwo/Exercise392/Solution.php)   | Easy       |
 | 409  |[Longest Palindrome](https://leetcode.com/problems/longest-palindrome)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFive/Exercise409/Solution.php)  | Easy       |
+| 589  |[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DaySix/Exercise589/Solution.php)   | Easy       |
 | 724  |[Find Pivot Index](https://leetcode.com/problems/find-pivot-index)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayOne/Exercise724/Solution.php)   | Easy       |
 | 876  |[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFour/Exercise876/Solution.php)  | Easy       |
 | 1480 |[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayOne/Exercise1480/Solution.php)  | Easy       |
@@ -43,6 +44,7 @@ After that use 'php index.php' and choose an exercise.
 | 350 |[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)| [PHP](https://github.com/shadar147/leetcode/blob/master/DataStructure/LevelOne/DayThree/Exercise350/Solution.php) | Easy       |
 | 392  |[Is Subsequence](https://leetcode.com/problems/is-subsequence)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayTwo/Exercise392/Solution.php)  |Easy|
 | 409  |[Longest Palindrome](https://leetcode.com/problems/longest-palindrome)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFive/Exercise409/Solution.php)  | Easy       |
+| 589  |[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DaySix/Exercise589/Solution.php)   | Easy       |
 | 724  |[Find Pivot Index](https://leetcode.com/problems/find-pivot-index)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayOne/Exercise724/Solution.php)  |Easy|
 | 876  |[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFour/Exercise876/Solution.php)  |Easy|
 | 1480 |[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayOne/Exercise1480/Solution.php) |Easy|

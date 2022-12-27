@@ -29,6 +29,9 @@ class Leetcode75Structure extends AbstractStructure
             'Day 5' => [
                 '121. Best Time to Buy and Sell Stock' => Leetcode75\LevelOne\DayFive\Exercise121\Example::class,
                 '409. Longest Palindrome' => Leetcode75\LevelOne\DayFive\Exercise409\Example::class
+            ],
+            'Day 6' => [
+                '589. N-ary Tree Preorder Traversal' => Leetcode75\LevelOne\DaySix\Exercise589\Example::class
             ]
         ]
     ];

@@ -21,6 +21,7 @@ class ExercisesStructure extends AbstractStructure
         '350. Intersection of Two Arrays II' => DataStructure\LevelOne\DayThree\Exercise350\Example::class,
         '392. Is Subsequence' => Leetcode75\LevelOne\DayTwo\Exercise392\Example::class,
         '409. Longest Palindrome' => Leetcode75\LevelOne\DayFive\Exercise409\Example::class,
+        '589. N-ary Tree Preorder Traversal' => Leetcode75\LevelOne\DaySix\Exercise589\Example::class,
         '724. Find Pivot Index' => Leetcode75\LevelOne\DayOne\Exercise724\Example::class,
         '876. Middle of the Linked List' => Leetcode75\LevelOne\DayFour\Exercise876\Example::class,
         '1480. Running Sum of 1d Array ' => Leetcode75\LevelOne\DayOne\Exercise1480\Example::class,
