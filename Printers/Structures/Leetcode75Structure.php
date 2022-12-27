@@ -23,7 +23,11 @@ class Leetcode75Structure extends AbstractStructure
                 '206. Reverse Linked List' => Leetcode75\LevelOne\DayThree\Exercise206\Example::class
             ],
             'Day 4' => [
-                '876. Middle of the Linked List' => Leetcode75\LevelOne\DayFour\Exercise876\Example::class,
+                '142. Linked List Cycle II' => Leetcode75\LevelOne\DayFour\Exercise142\Example::class,
+                '876. Middle of the Linked List' => Leetcode75\LevelOne\DayFour\Exercise876\Example::class
+            ],
+            'Day 5' => [
+                '121. Best Time to Buy and Sell Stock' => Leetcode75\LevelOne\DayFive\Exercise121\Example::class,
             ]
         ]
     ];
