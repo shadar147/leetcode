@@ -18,7 +18,7 @@ After that use 'php index.php' and choose an exercise.
 | #    | Title | Solution                                                                                                       | Difficulty |
 |------| ----- |----------------------------------------------------------------------------------------------------------------|------------|
 | 21   |[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayThree/Exercise21/Solution.php)  | Easy       |
-| 121  |[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFive/Exercise121/Solution.php)  | Medium     |
+| 121  |[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFive/Exercise121/Solution.php)  | Easy     |
 | 142  |[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFour/Exercise142/Solution.php)  | Medium     |
 | 205  |[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayTwo/Exercise205/Solution.php)   | Easy       |
 | 206  |[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayThree/Exercise206/Solution.php) | Easy       |
@@ -34,7 +34,7 @@ After that use 'php index.php' and choose an exercise.
 | 21  |[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayThree/Exercise21/Solution.php) |Easy|
 | 53 |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)| [PHP](https://github.com/shadar147/leetcode/blob/master/DataStructure/LevelOne/DayOne/Exercise51/Solution.php)     | Medium     |
 | 88  |[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| [PHP](https://github.com/shadar147/leetcode/blob/master/DataStructure/LevelOne/DayTwo/Exercise88/Solution.php)     | Easy     |
-| 121  |[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFive/Exercise121/Solution.php)  | Medium     |
+| 121  |[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFive/Exercise121/Solution.php)  | Easy     |
 | 142  |[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayFour/Exercise142/Solution.php)  | Medium     |
 | 205  |[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayTwo/Exercise205/Solution.php)  |Easy|
 | 206  |[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)| [PHP](https://github.com/shadar147/leetcode/blob/master/Leetcode75/LevelOne/DayThree/Exercise206/Solution.php) |Easy|
