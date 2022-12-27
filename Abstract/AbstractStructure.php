@@ -19,7 +19,7 @@ abstract class AbstractStructure
         return $this->stepper->getSteps();
     }
 
-    public function getExample(): ?Example
+    public function getExample(): ?AbstractExample
     {
         if (empty($this->example)) {
             return null;

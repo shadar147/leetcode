@@ -2,7 +2,8 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayOne\Exercise724;
 
-use Shadar\Leetcode\Abstract\Example as AbstractExample;
+use Exception;
+use Shadar\Leetcode\Abstract\AbstractExample;
 
 class Example extends AbstractExample
 {
@@ -25,5 +26,20 @@ class Example extends AbstractExample
     public function handle(): void
     {
         $this->defaultHandler('pivotIndex');
+    }
+
+    protected function printTestCaseInfo(int $key, array|int|string $testCase): void
+    {
+        $this->printArrayHandler($key, $testCase);
+    }
+
+    protected function printResult(array|bool|int $result): void
+    {
+        $this->printVarExportResult($result);
+    }
+
+    protected function printError(Exception $exception, int $key, array|int|string $testCase): void
+    {
+        $this->printArrayError($exception, $testCase);
     }
 }

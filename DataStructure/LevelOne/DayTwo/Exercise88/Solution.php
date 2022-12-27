@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\DataStructure\LevelOne\DayTwo\Exercise88;
 
-use Shadar\Leetcode\Contracts\Solution as SolutionContract;
+use Shadar\Leetcode\Contracts\SolutionContract;
 
 /**
  * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.

@@ -2,7 +2,8 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayThree\Exercise21;
 
-use Shadar\Leetcode\Contracts\Solution as SolutionContract;
+use Shadar\Leetcode\Contracts\SolutionContract;
+use Shadar\Leetcode\Entities\ListNode;
 
 /**
  * You are given the heads of two sorted linked lists list1 and list2.

@@ -2,7 +2,8 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayFour\Exercise142;
 
-use Shadar\Leetcode\Contracts\Solution as SolutionContract;
+use Shadar\Leetcode\Contracts\SolutionContract;
+use Shadar\Leetcode\Entities\ListNode;
 
 /**
  * Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
@@ -12,7 +13,7 @@ use Shadar\Leetcode\Contracts\Solution as SolutionContract;
 class Solution implements SolutionContract
 {
     /**
-     * @param ListNode $head
+     * @param ListNode|null $head
      * @return ListNode|null
      */
     public function detectCycle(?ListNode $head): ?ListNode

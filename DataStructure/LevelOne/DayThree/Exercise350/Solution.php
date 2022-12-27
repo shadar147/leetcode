@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\DataStructure\LevelOne\DayThree\Exercise350;
 
-use Shadar\Leetcode\Contracts\Solution as SolutionContract;
+use Shadar\Leetcode\Contracts\SolutionContract;
 
 class Solution implements SolutionContract
 {

@@ -2,7 +2,8 @@
 
 namespace Shadar\Leetcode\DataStructure\LevelOne\DayTwo\Exercise88;
 
-use Shadar\Leetcode\Abstract\Example as AbstractExample;
+use Exception;
+use Shadar\Leetcode\Abstract\AbstractExample;
 
 class Example extends AbstractExample
 {
@@ -36,29 +37,29 @@ class Example extends AbstractExample
 
     public function handle(): void
     {
-        foreach ($this->testCases as $key => $testCase) {
-            $this->printTestCaseInfo($key, $testCase);
-            $this->time->startTime();
-            try {
-                $this->solution->merge($testCase['nums1'], $testCase['m'], $testCase['nums2'], $testCase['n']);
-                echo 'Result: ' . var_export($testCase['nums1'], true) . PHP_EOL;
-            } catch (\Exception $e) {
-                echo "Error '{$e->getMessage()}' for array " . implode(', ', $testCase['nums']) . PHP_EOL;
-            }
-            $this->time->stopTime();
-            echo PHP_EOL;
-        }
-
-        $this->printTimeHandler();
+        $this->defaultHandler('merge');
     }
 
-    private function printTestCaseInfo(int $key, array $testCase): void
+    protected function printTestCaseInfo(int $key, array|string|int $testCase): void
     {
-        echo $key + 1 . ' test case for arrays:' . PHP_EOL;
-        echo 'first: ' . PHP_EOL;
-        $this->printArray($testCase['nums1'], $this->humanableKey);
-        echo 'second: ' . PHP_EOL;
-        $this->printArray($testCase['nums2'], $this->humanableKey);
+        $this->printArraysHandler($key, $testCase['nums1'], $testCase['nums2']);
         echo 'numbers: m=' . $testCase['m'] . ', n=' . $testCase['n'] . PHP_EOL;
+    }
+
+    protected function printResult(array|bool|int $result): void
+    {
+        $this->printVarExportResult($result);
+    }
+
+    protected function printError(Exception $exception, int $key, string|int|array $testCase): void
+    {
+        $this->printTestCaseError($exception, $key);
+    }
+
+    protected function resultHandler(string $solutionMethod, mixed $testCase): array|int|bool
+    {
+        $this->solution->{$solutionMethod}($testCase['nums1'], $testCase['m'], $testCase['nums2'], $testCase['n']);
+
+        return $testCase['nums1'];
     }
 }

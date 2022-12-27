@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayFive\Exercise121;
 
-use Shadar\Leetcode\Contracts\Solution as SolutionContract;
+use Shadar\Leetcode\Contracts\SolutionContract;
 
 /**
  * You are given an array prices where prices[i] is the price of a given stock on the ith day.
