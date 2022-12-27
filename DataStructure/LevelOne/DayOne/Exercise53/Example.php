@@ -2,7 +2,8 @@
 
 namespace Shadar\Leetcode\DataStructure\LevelOne\DayOne\Exercise53;
 
-use Shadar\Leetcode\Abstract\Example as AbstractExample;
+use Exception;
+use Shadar\Leetcode\Abstract\AbstractExample;
 
 class Example extends AbstractExample
 {
@@ -22,5 +23,20 @@ class Example extends AbstractExample
     public function handle(): void
     {
         $this->defaultHandler('maxSubArray');
+    }
+
+    protected function printTestCaseInfo(int $key, array|string|int $testCase): void
+    {
+        $this->printArrayHandler($key, $testCase);
+    }
+
+    protected function printResult(array|bool|int $result): void
+    {
+        $this->printVarExportResult($result);
+    }
+
+    protected function printError(Exception $exception, int $key, string|int|array $testCase): void
+    {
+        $this->printArrayError($exception, $testCase);
     }
 }

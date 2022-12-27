@@ -2,9 +2,11 @@
 
 namespace Shadar\Leetcode\Leetcode75\LevelOne\DayThree\Exercise21;
 
-use Shadar\Leetcode\Abstract\Example as AbstractExample;
+use Exception;
+use Shadar\Leetcode\Abstract\ListNodeAbstractExample;
+use Shadar\Leetcode\Entities\ListNode;
 
-class Example extends AbstractExample
+class Example extends ListNodeAbstractExample
 {
     protected array $testCases = [
         [
@@ -30,52 +32,29 @@ class Example extends AbstractExample
 
     public function handle(): void
     {
-        foreach ($this->testCases as $key => $testCase) {
-            $this->printTestCaseInfo($key, $testCase);
-            $this->time->startTime();
-            $this->printResult($this->solution->mergeTwoLists(
-                $this->createListNodes($testCase['list1']),
-                $this->createListNodes($testCase['list2'])
-            ));
-            $this->time->stopTime();
-        }
-
-        $this->printTimeHandler();
+        $this->defaultHandler('mergeTwoLists');
     }
 
-    private function printTestCaseInfo(int $key, array $testCase): void
+    protected function resultHandler(string $solutionMethod, mixed $testCase): array|int|bool|ListNode|null
     {
-        echo $key + 1 . ' test case for arrays:' . PHP_EOL;
-        echo 'first: ' . PHP_EOL;
-        $this->printArray($testCase['list1'], $this->humanableKey);
-        echo 'second: ' . PHP_EOL;
-        $this->printArray($testCase['list2'], $this->humanableKey);
+        return $this->solution->{$solutionMethod}(
+            $this->createListNodes($testCase['list1']),
+            $this->createListNodes($testCase['list2'])
+        );
     }
 
-    private function createListNodes(array $list): ?ListNode
+    protected function printTestCaseInfo(int $key, array|string|int $testCase): void
     {
-        $listNodes = [];
-
-        for ($i = count($list) - 1; $i >= 0; $i--) {
-            $listNodes[] = new ListNode($list[$i], end($listNodes) ?: null);
-        }
-
-        return end($listNodes) ?: null;
+        $this->printArraysHandler($key, $testCase['list1'], $testCase['list2']);
     }
 
-    private function printResult(?ListNode $listNode): void
+    protected function printResult(ListNode|int|bool|array|null $result): void
     {
-        echo 'Result: [';
+        $this->printListNodeResults($result);
+    }
 
-        while (!is_null($listNode)) {
-            echo $listNode->val;
-            if (!is_null($listNode->next)) {
-                echo ', ';
-            }
-
-            $listNode = $listNode->next;
-        }
-
-        echo '].' . PHP_EOL;
+    protected function printError(Exception $exception, int $key, array|int|string $testCase): void
+    {
+        $this->printTestCaseError($exception, $key);
     }
 }

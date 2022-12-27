@@ -2,7 +2,8 @@
 
 namespace Shadar\Leetcode\DataStructure\LevelOne\DayThree\Exercise350;
 
-use Shadar\Leetcode\Abstract\Example as AbstractExample;
+use Exception;
+use Shadar\Leetcode\Abstract\AbstractExample;
 
 class Example extends AbstractExample
 {
@@ -26,27 +27,26 @@ class Example extends AbstractExample
 
     public function handle(): void
     {
-        foreach ($this->testCases as $key => $testCase) {
-            $this->printTestCaseInfo($key, $testCase);
-            $this->time->startTime();
-            $this->printResult($this->solution->intersect($testCase['nums1'], $testCase['nums2']));
-            $this->time->stopTime();
-        }
-
-        $this->time->getTimes();
+        $this->defaultHandler('intersect');
     }
 
-    private function printTestCaseInfo(int $key, array $testCase): void
+    protected function printTestCaseInfo(int $key, array|string|int $testCase): void
     {
-        echo $key + 1 . ' test case for arrays:' . PHP_EOL;
-        echo 'first: ' . PHP_EOL;
-        $this->printArray($testCase['nums1'], $this->humanableKey);
-        echo 'second: ' . PHP_EOL;
-        $this->printArray($testCase['nums2'], $this->humanableKey);
+        $this->printArraysHandler($key, $testCase['nums1'], $testCase['nums2']);
     }
 
-    private function printResult(array $result): void
+    protected function printResult(array|bool|int $result): void
     {
-        echo 'Result: ' . var_export($result, true) . PHP_EOL;
+        $this->printVarExportResult($result);
+    }
+
+    protected function printError(Exception $exception, int $key, string|int|array $testCase): void
+    {
+        $this->printTestCaseError($exception, $key);
+    }
+
+    protected function resultHandler(string $solutionMethod, mixed $testCase): array|int|bool
+    {
+        return $this->solution->{$solutionMethod}($testCase['nums1'], $testCase['nums2']);
     }
 }

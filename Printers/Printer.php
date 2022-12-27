@@ -2,7 +2,7 @@
 
 namespace Shadar\Leetcode\Printers;
 
-use Shadar\Leetcode\Contracts\Example;
+use Shadar\Leetcode\Contracts\ExampleContract;
 use Shadar\Leetcode\Abstract\AbstractStructure;
 use Shadar\Leetcode\Printers\Structures;
 use Shadar\Leetcode\Traits\Arrayable;
@@ -19,7 +19,7 @@ class Printer
 
     private AbstractStructure $structure;
 
-    public function start(): ?Example
+    public function start(): ?ExampleContract
     {
         $this->chooseStructure();
 
@@ -45,7 +45,7 @@ class Printer
         $this->structure = new $this->structures[$structureClass];
     }
 
-    private function getExample(): ?Example
+    private function getExample(): ?ExampleContract
     {
         return $this->structure->getExample();
     }

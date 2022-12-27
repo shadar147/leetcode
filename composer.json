@@ -7,7 +7,8 @@
     }
   ],
   "require": {
-    "ext-readline": "*"
+    "ext-readline": "*",
+    "ext-intl": "*"
   },
   "minimum-stability": "dev",
   "autoload": {

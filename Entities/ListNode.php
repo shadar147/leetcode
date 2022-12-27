@@ -1,6 +1,6 @@
 <?php
 
-namespace Shadar\Leetcode\Leetcode75\LevelOne\DayThree\Exercise206;
+namespace Shadar\Leetcode\Entities;
 
 class ListNode
 {
