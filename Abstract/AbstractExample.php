@@ -15,6 +15,8 @@ abstract class AbstractExample implements ExampleContract
         Echoable\Results,
         Echoable\TestCases;
 
+    protected string $title = '0. Abstract example';
+    protected string $description = 'Abstract example description';
     protected array $testCases;
     protected SolutionContract $solution;
     protected Time $time;
@@ -25,6 +27,16 @@ abstract class AbstractExample implements ExampleContract
     }
 
     abstract public function handle(): void;
+
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
 
     abstract protected function printTestCaseInfo(int $key, array|string|int $testCase): void;
 
