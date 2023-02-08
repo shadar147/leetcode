@@ -24,7 +24,8 @@ class ExercisesStructure extends AbstractStructure
         '409. Longest Palindrome' => Exercises\Thousand1\Hundred5\Ten1\Exercise409\Example::class,
         '724. Find Pivot Index' => Exercises\Thousand1\Hundred8\Ten3\Exercise724\Example::class,
         '876. Middle of the Linked List' => Exercises\Thousand1\Hundred9\Ten8\Exercise876\Example::class,
-        '1480. Running Sum of 1d Array ' => Exercises\Thousand2\Hundred5\Ten9\Exercise1480\Example::class,
+        '1051. Height Checker' => Exercises\Thousand2\Hundred1\Ten6\Exercise1051\Example::class,
+        '1480. Running Sum of 1d Array' => Exercises\Thousand2\Hundred5\Ten9\Exercise1480\Example::class,
     ];
 
     public function __construct()

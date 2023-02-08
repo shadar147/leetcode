@@ -46,4 +46,5 @@ After that use 'php index.php' and choose an exercise.
 | 409  |[Longest Palindrome](https://leetcode.com/problems/longest-palindrome)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred5/Ten1/Exercise409/Solution.php)  | Easy       |
 | 724  |[Find Pivot Index](https://leetcode.com/problems/find-pivot-index)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred8/Ten3/Exercise724/Solution.php)  |Easy|
 | 876  |[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred9/Ten8/Exercise876/Solution.php)  |Easy|
+| 1051 |[Height Checker](https://leetcode.com/problems/height-checker)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand2/Hundred1/Ten6/Exercise1051/Solution.php) |Easy|
 | 1480 |[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand2/Hundred5/Ten9/Exercise1480/Solution.php) |Easy|

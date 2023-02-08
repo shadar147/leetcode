@@ -9,6 +9,11 @@ class Example extends AbstractExample
 {
     protected string $title = '75. Sort Colors';
 
+    protected array $testCases = [
+        [2, 0, 2, 1, 1, 0],
+        [2, 0, 1]
+    ];
+
     public function __construct()
     {
         $this->solution = new Solution();
@@ -19,11 +24,6 @@ class Example extends AbstractExample
 
         parent::__construct();
     }
-
-    protected array $testCases = [
-        [2, 0, 2, 1, 1, 0],
-        [2, 0, 1]
-    ];
 
     public function handle(): void
     {
