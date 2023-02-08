@@ -12,6 +12,30 @@ class Solution implements SolutionContract
      */
     public function sortColors(array &$nums): void
     {
+        $counter = [
+            0 => 0,
+            1 => 0,
+            2 => 0
+        ];
+
+        foreach ($nums as $num) {
+            if (isset($counter[$num])) {
+                $counter[$num]++;
+            }
+        }
+
+        $nums = [];
+        foreach ($counter as $value => $count) {
+            $nums = array_merge($nums, array_fill(0, $count, $value));
+        }
+    }
+
+    /**
+     * @param int[] $nums
+     * @return void
+     */
+    public function sortColorsOld(array &$nums): void
+    {
         $count = count($nums);
         for ($i = 0; $i < $count - 1; $i++) {
             $minIndex = $i;
