@@ -16,6 +16,7 @@ class ExercisesStructure extends AbstractStructure
         '88. Merge Sorted Array' => Exercises\Thousand1\Hundred1\Ten9\Exercise88\Example::class,
         '121. Best Time to Buy and Sell Stock' => Exercises\Thousand1\Hundred2\Ten3\Exercise121\Example::class,
         '142. Linked List Cycle II' => Exercises\Thousand1\Hundred2\Ten5\Exercise142\Example::class,
+        '147. Insertion Sort List' => Exercises\Thousand1\Hundred2\Ten5\Exercise147\Example::class,
         '205. Isomorphic Strings' => Exercises\Thousand1\Hundred3\Ten1\Exercise205\Example::class,
         '206. Reverse Linked List' => Exercises\Thousand1\Hundred3\Ten1\Exercise206\Example::class,
         '217. Contains Duplicate' => Exercises\Thousand1\Hundred3\Ten2\Exercise217\Example::class,
