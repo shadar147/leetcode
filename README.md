@@ -34,8 +34,8 @@ After that use 'php index.php' and choose an exercise.
 | 1    |[Two Sum](https://leetcode.com/problems/two-sum/)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred1/Ten1//Exercise1/Solution.php)   |Easy|
 | 21   |[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred1/Ten3/Exercise21/Solution.php)   |Easy|
 | 53   |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred1/Ten6/Exercise53/Solution.php)   | Medium     |
-| 75   |[Sort Colors](https://leetcode.com/problems/sort-colors)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred1/Ten6/Exercise53/Solution.php)   | Medium     |
-| 88   |[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred1/Ten8/Exercise75/Solution.php)   | Medium     |
+| 75   |[Sort Colors](https://leetcode.com/problems/sort-colors)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred1/Ten8/Exercise75/Solution.php)   | Medium     |
+| 88   |[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred1/Ten9/Exercise88/Solution.php)   | Medium     |
 | 121  |[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred2/Ten3/Exercise121/Solution.php)  | Easy     |
 | 142  |[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred2/Ten5/Exercise142/Solution.php)  | Medium     |
 | 205  |[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)| [PHP](https://github.com/shadar147/leetcode/blob/master/Exercises/Thousand1/Hundred3/Ten1/Exercise205/Solution.php)  |Easy|
