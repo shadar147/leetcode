@@ -35,8 +35,6 @@ class Solution implements SolutionContract
      */
     private function maxHeapify(array &$arr, int $heapSize, int $index): void
     {
-        //[5, 2, 3, 1]
-        //[1, 2, 3]
         $left = 2 * $index + 1;
         $right = 2 * $index + 2;
         $head = $index;
