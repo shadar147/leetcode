@@ -5,6 +5,7 @@ namespace Shadar\Leetcode\Abstract;
 use Exception;
 use Shadar\Leetcode\Contracts\{ExampleContract, SolutionContract};
 use Shadar\Leetcode\Entities\ListNode;
+use Shadar\Leetcode\Enums\Complexity;
 use Shadar\Leetcode\TimeMarkers\Time;
 use Shadar\Leetcode\Traits\{Arrayable, Echoable};
 
@@ -17,6 +18,7 @@ abstract class AbstractExample implements ExampleContract
 
     protected string $title = '0. Abstract example';
     protected string $description = 'Abstract example description';
+    protected Complexity $complexity;
     protected array $testCases;
     protected SolutionContract $solution;
     protected Time $time;
