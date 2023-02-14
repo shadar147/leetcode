@@ -16,6 +16,11 @@ trait Results
         echo "Result: {$result}" . PHP_EOL;
     }
 
+    protected function printIntResult(int $result): void
+    {
+        echo "Result: {$result}" . PHP_EOL;
+    }
+
     protected function printListNodeResults(?ListNode $listNode): void
     {
         echo 'Result: [';

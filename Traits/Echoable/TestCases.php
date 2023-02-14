@@ -40,4 +40,11 @@ trait TestCases
             echo $formatter->format($k + 1) . ': ' . $value . PHP_EOL;
         }
     }
+
+    protected function printArrayAndNumberTestCase(int $key, array $value, int $number): void
+    {
+        echo $key + 1 . ' test case for array: ' . PHP_EOL;
+        $this->printArray($value, $this->humanableKey);
+        echo 'and number: ' . $number . PHP_EOL;
+    }
 }

@@ -19,6 +19,7 @@ class ExercisesStructure extends AbstractStructure
         '147. Insertion Sort List' => Exercises\Thousand1\Hundred2\Ten5\Exercise147\Example::class,
         '205. Isomorphic Strings' => Exercises\Thousand1\Hundred3\Ten1\Exercise205\Example::class,
         '206. Reverse Linked List' => Exercises\Thousand1\Hundred3\Ten1\Exercise206\Example::class,
+        '215. Kth Largest Element in an Array' => Exercises\Thousand1\Hundred3\Ten2\Exercise215\Example::class,
         '217. Contains Duplicate' => Exercises\Thousand1\Hundred3\Ten2\Exercise217\Example::class,
         '350. Intersection of Two Arrays II' => Exercises\Thousand1\Hundred4\Ten6\Exercise350\Example::class,
         '392. Is Subsequence' => Exercises\Thousand1\Hundred4\Ten10\Exercise392\Example::class,
