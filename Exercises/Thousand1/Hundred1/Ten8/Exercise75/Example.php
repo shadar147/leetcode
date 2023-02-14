@@ -11,7 +11,9 @@ class Example extends AbstractExample
 
     protected array $testCases = [
         [2, 0, 2, 1, 1, 0],
-        [2, 0, 1]
+        [2, 0, 1],
+        [1, 5, 0, 3, 6, 4, 2],
+        [5, 4, 5, 5, 1, 1, 3]
     ];
 
     public function __construct()
@@ -27,7 +29,7 @@ class Example extends AbstractExample
 
     public function handle(): void
     {
-        $this->defaultHandler('sortColors');
+        $this->defaultHandler('sortColorsNonComparison');
     }
 
     protected function printTestCaseInfo(int $key, array|string|int $testCase): void

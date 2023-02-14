@@ -52,4 +52,49 @@ class Solution implements SolutionContract
             }
         }
     }
+
+    /**
+     * @param int[] $nums
+     * @return void
+     */
+    public function sortColorsNonComparison(array &$nums): void
+    {
+        [$min, $max] = $this->findMinMax($nums);
+        $k = $max - $min;
+
+        $counter = array_fill(0, $k + 1, 0);
+        foreach ($nums as $num) {
+            $counter[$num - $min]++;
+        }
+
+        $index = 0;
+        for ($i = 0; $i < count($counter); $i++) {
+            $count = $counter[$i];
+            $counter[$i] = $index;
+            $index += $count;
+        }
+
+        $res = array_fill(0, count($nums), 0);
+        foreach ($nums as $num) {
+            $res[$counter[$num - $min]] = $num;
+            $counter[$num - $min]++;
+        }
+
+        $nums = $res;
+    }
+
+    private function findMinMax(array $nums): array
+    {
+        $min = $nums[0];
+        $max = $nums[0];
+        for ($i = 1; $i < count($nums); $i++) {
+            if ($min > $nums[$i]) {
+                $min = $nums[$i];
+            } elseif ($max < $nums[$i]) {
+                $max = $nums[$i];
+            }
+        }
+
+        return [$min, $max];
+    }
 }
